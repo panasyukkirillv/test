@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@15.8.1/dist/nouislider.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Home Page
+  </title>
+  <body>
+    <div class="layout">
+      <div class="layout__header">
+      </div>
+      <div class="layout__main">
+        <div class="page">
+          <div class="page__header header">
+            <div class="header__bar bar"><a class="bar__logo logo" href="#">Marketplace</a>
+              <div class="bar__search search">
+                <input class="search__input input" type="text" placeholder="Search for a product, flower, etc" autocomplete="off">
+                <svg class="search__icon" width="24" height="24">
+                  <use href="./assets/icons/clean/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <ul class="bar__points points">
+                <li class="points__item">
+                  <label class="point">
+                    <input class="point__input" type="checkbox"><span class="point__button">
+                      <svg class="point__icon" width="24" height="24">
+                        <use href="./assets/icons/clean/sprite.svg#flower"></use>
+                      </svg>Buds</span>
+                  </label>
+                </li>
+                <li class="points__item">
+                  <label class="point">
+                    <input class="point__input" type="checkbox"><span class="point__button">
+                      <svg class="point__icon" width="24" height="24">
+                        <use href="./assets/icons/clean/sprite.svg#flower"></use>
+                      </svg>Edible</span>
+                  </label>
+                </li>
+                <li class="points__item">
+                  <label class="point">
+                    <input class="point__input" type="checkbox"><span class="point__button">
+                      <svg class="point__icon" width="24" height="24">
+                        <use href="./assets/icons/clean/sprite.svg#flower"></use>
+                      </svg>Non Edible</span>
+                  </label>
+                </li>
+                <li class="points__item">
+                  <label class="point">
+                    <input class="point__input" type="checkbox"><span class="point__button">
+                      <svg class="point__icon" width="24" height="24">
+                        <use href="./assets/icons/clean/sprite.svg#flower"></use>
+                      </svg>Concentrate</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <ul class="header__ranges ranges">
+              <li class="ranges__items range js-range">
+                <div class="range__heading">Price Range</div>
+                <div class="range__slider js-range__slider"></div>
+                <div class="range__box">
+                  <div class="range__field" data-symbol="$">
+                    <input class="range__input js-range__input" type="number" min="0" max="500">
+                  </div>
+                  <div class="range__field" data-symbol="$">
+                    <input class="range__input js-range__input" type="number" min="0" max="500">
+                  </div>
+                </div>
+              </li>
+              <li class="ranges__items range js-range">
+                <div class="range__heading">ТНС, %</div>
+                <div class="range__slider js-range__slider"></div>
+                <div class="range__box">
+                  <div class="range__field" data-symbol="%">
+                    <input class="range__input js-range__input" type="number" min="0" max="100">
+                  </div>
+                </div>
+              </li>
+              <li class="ranges__items range js-range">
+                <div class="range__heading">CBD, %</div>
+                <div class="range__slider js-range__slider"></div>
+                <div class="range__box">
+                  <div class="range__field" data-symbol="%">
+                    <input class="range__input js-range__input" type="number" min="0" max="100">
+                  </div>
+                </div>
+              </li>
+              <li class="ranges__items range range--width_auto">
+                <div class="range__heading">Nose</div>
+                <div class="scale">
+                  <div class="scale__labels">
+                    <input class="scale__input" type="radio" name="scale" id="scale-10">
+                    <label class="scale__label" for="scale-10"></label>
+                    <input class="scale__input" type="radio" name="scale" id="scale-9">
+                    <label class="scale__label" for="scale-9"></label>
+                    <input class="scale__input" type="radio" name="scale" id="scale-8">
+                    <label class="scale__label" for="scale-8"></label>
+                    <input class="scale__input" type="radio" name="scale" id="scale-7">
+                    <label class="scale__label" for="scale-7"></label>
+                    <input class="scale__input" type="radio" name="scale" id="scale-6">
+                    <label class="scale__label" for="scale-6"></label>
+                    <input class="scale__input" type="radio" name="scale" id="scale-5">
+                    <label class="scale__label" for="scale-5"></label>
+                    <input class="scale__input" type="radio" name="scale" id="scale-4">
+                    <label class="scale__label" for="scale-4"></label>
+                    <input class="scale__input" type="radio" name="scale" id="scale-3">
+                    <label class="scale__label" for="scale-3"></label>
+                    <input class="scale__input" type="radio" name="scale" id="scale-2">
+                    <label class="scale__label" for="scale-2"></label>
+                    <input class="scale__input" type="radio" name="scale" id="scale-1">
+                    <label class="scale__label" for="scale-1"></label>
+                  </div>
+                  <div class="scale__box"><span class="scale__text">min</span><span class="scale__text">max</span></div>
+                </div>
+              </li>
+            </ul>
+            <div class="header__badges badges">
+              <div class="badges__result">1034,5 Results</div>
+              <ul class="badges__list">
+                <li class="badges__item badge"><span class="badge__text">100% Indica</span>
+                  <button class="badge__button" type="button">
+                    <svg class="badge__icon" width="18" height="18">
+                      <use href="./assets/icons/default/sprite.svg#cancel"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="badges__item badge"><span class="badge__text">>50% Indica</span>
+                  <button class="badge__button" type="button">
+                    <svg class="badge__icon" width="18" height="18">
+                      <use href="./assets/icons/default/sprite.svg#cancel"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="badges__item badge"><span class="badge__text">Indoor</span>
+                  <button class="badge__button" type="button">
+                    <svg class="badge__icon" width="18" height="18">
+                      <use href="./assets/icons/default/sprite.svg#cancel"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="badges__item badge"><span class="badge__text">Flower</span>
+                  <button class="badge__button" type="button">
+                    <svg class="badge__icon" width="18" height="18">
+                      <use href="./assets/icons/default/sprite.svg#cancel"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="badges__item badge"><span class="badge__text">Michigan</span>
+                  <button class="badge__button" type="button">
+                    <svg class="badge__icon" width="18" height="18">
+                      <use href="./assets/icons/default/sprite.svg#cancel"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="badges__item badge"><span class="badge__text">SellerSeller</span>
+                  <button class="badge__button" type="button">
+                    <svg class="badge__icon" width="18" height="18">
+                      <use href="./assets/icons/default/sprite.svg#cancel"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="badges__item badge"><span class="badge__text">Distributor</span>
+                  <button class="badge__button" type="button">
+                    <svg class="badge__icon" width="18" height="18">
+                      <use href="./assets/icons/default/sprite.svg#cancel"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sidebar">
+            <div class="filter js-filter">
+              <div class="filter__block js-filter__block">
+                <div class="filter__head js-filter__head">
+                  <div class="filter__heading">Classification
+                    <svg class="filter__icon" width="12" height="8">
+                      <use href="./assets/icons/clean/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="filter__body js-filter__body">
+                  <ul class="filter__list">
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-00"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">100% Indica</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-01"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">100% Sativa</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-02"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">>50% Indica</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-03"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">>50% Sativa</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filter__block js-filter__block">
+                <div class="filter__head js-filter__head">
+                  <div class="filter__heading">Production Method
+                    <svg class="filter__icon" width="12" height="8">
+                      <use href="./assets/icons/clean/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="filter__icon"></div>
+                </div>
+                <div class="filter__body js-filter__body">
+                  <ul class="filter__list">
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-04"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">Indoor</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-05"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">Outdoor</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-06"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">Greenhouse</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-07"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">Light Deprivation</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-08"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">Mixed Light</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-09"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">Other</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filter__block js-filter__block">
+                <div class="filter__head js-filter__head">
+                  <div class="filter__heading">Size
+                    <svg class="filter__icon" width="12" height="8">
+                      <use href="./assets/icons/clean/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="filter__icon"></div>
+                </div>
+                <div class="filter__body js-filter__body">
+                  <ul class="filter__list">
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-10"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">Flower</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-11"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">Pre-Roll Flower</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-12"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">Pre-Roll Infused</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-13"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">Pre-Roll Leaf</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-14"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">Shake</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-15"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">Other</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-16"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">Smalls</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-17"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">Trim</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-18"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">Shake</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-19"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">Keef</span>
+                      </label>
+                    </li>
+                    <li class="filter__item">
+                      <label class="label js-label">
+                        <input class="label__input js-label__input" type="checkbox" id="item-20"><span class="label__box">
+                          <svg class="label__icon" width="10" height="8">
+                            <use href="./assets/icons/default/sprite.svg#check"></use>
+                          </svg></span><span class="label__text">Fresh Frozen</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layout__footer">
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
